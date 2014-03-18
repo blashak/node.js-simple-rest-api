@@ -1,0 +1,68 @@
+<html lang="en">
+<head>
+ <meta charset="utf-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+ 
+ <title></title>
+ <meta name="description" content="">
+ <meta name="author" content="">
+ 
+ <meta name="viewport" content="width=device-width,initial-scale=1">
+ 
+ <link rel="stylesheet" href="css/style.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> 
+ </script>
+</head>
+<body>
+ 	
+<div id="container">
+ <form id="signup" >
+ 	<fieldset>sign up</fieldset>
+ 	<br>
+ 	<label>email</label>
+ 	<input type="text" name="email" />
+ 	<label>password</label>
+ 	<input tyoe="password"  name="password" />
+ </form>
+ <button id="send-signup">send</button>
+ <br> <br> <br>
+ <form id="login" >
+ 	<fieldset>login</fieldset>
+ 	<br>
+ 	<label>email</label>
+ 	<input type="text" name="email" />
+ 	<label>password</label>
+ 	<input tyoe="password" name="password" />
+ </form>
+ <button id="send-login">send</button>
+ <div id="main" role="main">
+ 
+ </div>
+ <footer>
+ 
+ </footer>
+</div> <!--! end of #container -->
+ 
+
+<script type="text/javascript" src="javascript.js"></script>
+<script type="text/javascript">
+
+	if (uuid != null && hash != null) {
+		session.autologin();
+	}
+
+	$("#send-login").on("click", function(){
+		session.login();
+	});
+
+	$("#send-signup").on("click", function(){
+		session.signup();
+	});
+
+	$("#logout").on("click", function(){
+		session.logout();
+	});
+
+</script>
+ </body>
+</html>
