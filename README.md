@@ -12,4 +12,4 @@ How to implement login auth in node.js for RESTful API
 2.2 The server returns a hash (token(uuid + salt) + salt) that saves in the device table linking up the uuid with the user id .
 
 
-![alt tag](https://github.com/blashak/node.js-simple-rest-api/api.png)
+![image](https://github.com/blashak/node.js-simple-rest-api/blob/master/api.png)
